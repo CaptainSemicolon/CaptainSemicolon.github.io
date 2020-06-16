@@ -4,6 +4,7 @@ $( document ).ready(function() {
         var str = "<table id='table' class='table table-striped table-hover'>"
         str += "<thead class='thead thead-dark'>"
         str += "<tr style='text-align: center'>"
+        str += "<th>Photo</th>"
         str += "<th>Name</th>"
         str += "<th>Birthday</th>"
         str += "<th>Personality</th>"
@@ -16,7 +17,8 @@ $( document ).ready(function() {
         
         for(var i = 0; i != data.length; i++){
             str += "<tr style='text-align: center'>"
-            str += "<td style='text-align: left'>" + data[i].Name + "</td>"
+            str += "<td style='text-align: center'><img style='height: 100px;' src='images/NH-" + ((((data[i].Name).replace(' ', '_')).replace('\'', '27')).replace('é', 'C3A9')).replace('.', '') + "_poster.png'></td>"
+            str += "<td style='text-align: center'>" + data[i].Name + "</td>"
             str += "<td style='text-align: center'>" + data[i].Birthday + "</td>"
             str += "<td style='text-align: center'>" + data[i].Personality + "</td>"
             str += "<td style='text-align: center'>" + data[i].Species + "</td>"
