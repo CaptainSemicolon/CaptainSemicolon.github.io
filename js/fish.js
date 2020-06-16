@@ -1,6 +1,6 @@
 // On Load
 $( document ).ready(function() {
-    $.getJSON("json/bugs.json", function(data) {
+    $.getJSON("json/fish.json", function(data) {
         var str = "<table id='table' class='table table-striped table-hover'>"
         str += "<thead class='thead thead-dark'>"
         str += "<tr style='text-align: center'>"
