@@ -13,6 +13,7 @@
           box-shadow: 5px 5px 5px #8888;
   border: 1px solid #C9C9C9;
   padding: 3vh 3vw;
+  text-align: center;
 }
 
 .projectbirthday .container .clue-area {
@@ -39,15 +40,17 @@
   border-radius: 8px;
 }
 
+.projectbirthday .container .clue-area .text {
+  text-align: left;
+}
+
 .projectbirthday .container .next-btn {
   background: #8AC936;
   border: none;
   outline: none;
   border-radius: 8px;
-  width: 80vw;
-  position: absolute;
-  bottom: 8vh;
-  left: 10vw;
+  width: 80%;
   padding: 1rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=projectbirthday.css.map */
