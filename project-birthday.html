@@ -46,6 +46,14 @@
         </div>
     </body>
     <script>
+        var positions = [
+          {name:"Home",latitude:45.335,longitude:-73.973},
+          {name:"Karianne's",latitude:45.371,longitude:-74.024},
+          {name:"McDonalds Dorion",latitude:45.379,longitude:-74.017},
+          {name:"Tim Hortons Dorion",latitude:45.378,longitude:-74.019},
+          {name:"Audrey's House",latitude:45.390,longitude:-74.034}
+        ]
+
         typewriter('[NAME OF TREASUREHUNTER],<br>You have been randomly assigned a treasurehunting task!<br>Your first mission is to head to the location seen in the picture above.<br>Good luck agent.<br>[END OF TRANSMISSION]', 50);
         var x = document.getElementById("demo");
         function getLocation() {
@@ -57,8 +65,17 @@
         }
         
         function showPosition(position) {
-          x.innerHTML = "Latitude: " + (position.coords.latitude).toFixed(8) +
+          var str = "Latitude: " + (position.coords.latitude).toFixed(8) +
           "<br>Longitude: " + (position.coords.longitude).toFixed(8);
+
+          for(var  i = 0; i != positions.length; i++){
+              if(positions[i].latitude == (position.coords.latitude).toFixed(3) && positions[i].longitude == (position.coords.longitude).toFixed(3))
+                str += "<br>" + positions[i].name + ": <font style='color: green'>YES</font>";
+              else
+                str += "<br>" + positions[i].name + ": <font style='color: red'>NO</font>";
+          }
+
+          x.innerHTML = str;
         }
 
         async function typewriter(message, delay){
