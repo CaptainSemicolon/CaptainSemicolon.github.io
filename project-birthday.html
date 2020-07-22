@@ -70,8 +70,6 @@
           
           var mylat = ((position.coords.latitude).toFixed(8)).toString().match(/^-?\d+(?:\.\d{0,3})?/)[0];
           var mylon = ((position.coords.longitude).toFixed(8)).toString().match(/^-?\d+(?:\.\d{0,3})?/)[0];
-          console.log(mylat);
-          console.log(mylon);
           for(var  i = 0; i != positions.length; i++){
               if(positions[i].latitude == mylat && positions[i].longitude == mylon)
                 str += "<br>" + positions[i].name + ": <font style='color: green'>YES</font>";
