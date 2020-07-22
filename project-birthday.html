@@ -67,9 +67,13 @@
         function showPosition(position) {
           var str = "Latitude: " + (position.coords.latitude).toFixed(8) +
           "<br>Longitude: " + (position.coords.longitude).toFixed(8);
-
+          
+          var mylat = ((position.coords.latitude).toFixed(8)).toString().match(/^-?\d+(?:\.\d{0,3})?/)[0];
+          var mylon = ((position.coords.longitude).toFixed(8)).toString().match(/^-?\d+(?:\.\d{0,3})?/)[0];
+          console.log(mylat);
+          console.log(mylon);
           for(var  i = 0; i != positions.length; i++){
-              if(positions[i].latitude == (position.coords.latitude).toFixed(3) && positions[i].longitude == (position.coords.longitude).toFixed(3))
+              if(positions[i].latitude == mylat && positions[i].longitude == mylon)
                 str += "<br>" + positions[i].name + ": <font style='color: green'>YES</font>";
               else
                 str += "<br>" + positions[i].name + ": <font style='color: red'>NO</font>";
