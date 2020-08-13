@@ -1,7 +1,8 @@
 var hints = [
-    {id:1,title:"Step 01: Introduction",text:"Welcome!<br>To access the next page, you must be home, click the localization button below to verify your location. If you are home, it will unlock the next step!<br>Good luck!",image:"../images/clue.png"}
+    {id:1,title:"Step 01: Introduction",text:"Hello everyone!<br>Right now in Vaudreuil it is " + moment().format('h:mm a') + ".<br>Looks like we have a special announcement! Happy birthday Audrey!<br>To celebrate, some villagers have got you gifts... although they hid them. Ah! Perhaps a bit of treasure hunting... Let's make sure you are HOME before we begin. First, click the localization button and the next step should light up.",image:"../images/isabellemain.jpg"},
+    {id:2,title:"Step 02: Introduction",text:"Good! It all works!<br>Nook phones aren't always reliable...<br>Anyway! Like I was saying, some villagers got you gifts but hid them, let's see if you can find them. Click the 'Next Step' button when you are ready to find the first gift.",image:"../images/isabellemain.jpg"},
+    {id:3,title:"Step 03: Bunnie's Gift",text:"Happy birthday Audrey!<br>I got you a great gift, but you'll have to work a bit to find ou where I put it. I have a clue for you, tap my picture to reveal it!",image:"../images/NH-Bunnie_poster.png"}
 ]
-
 var positions = [
     {name:"Home",latitude:45.335,longitude:-73.973},
     {name:"Karianne's",latitude:45.371,longitude:-74.024},
