@@ -48,8 +48,29 @@
                 <div class="title" id="clue-title">Hint 1: Some title</div>
                 <div class="picture-container"><img class="picture" id="clue-picture"></div>
                 <div class="text"><font id="clue-text"></font><br><font id="demo"></font></div>
-				<button class="next-btn" style="width: 100%" id="nextPage" onclick="getNextPage()">Next Step</button>
+				<button class="next-btn" style="width: 20%" onclick="getLocation()">‏‏‎ ‎<i class="fas fa-location-arrow"></i>‏‏‎ ‎</button>
+				<button class="next-btn" style="width: 78%" id="nextPage" onclick="getNextPage()" disabled>Next Step</button>
             </div>
         </div>
 	</body>
+	<script>
+	function getLocation() {
+		if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(showPosition);
+		} else {
+		console.log("Error: Geolocation has messed up")
+		}
+	}
+	
+	function showPosition(position) {
+		var str = "Latitude: " + (position.coords.latitude).toFixed(8) +
+		"<br>Longitude: " + (position.coords.longitude).toFixed(8);
+
+		var mylat = ((position.coords.latitude).toFixed(8)).toString().match(/^-?\d+(?:\.\d{0,3})?/)[0];
+		var mylon = ((position.coords.longitude).toFixed(8)).toString().match(/^-?\d+(?:\.\d{0,3})?/)[0];
+
+		if((mylat == 45.371 && mylon == -74.025) || (mylat == 45.334 && mylon == -73.983))
+			$("#nextPage").removeAttr("disabled");
+	}
+	</script>
 </html>

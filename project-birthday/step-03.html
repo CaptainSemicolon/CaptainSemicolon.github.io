@@ -40,8 +40,8 @@
 	</head>
 	<body class="projectbirthday">
 		<audio autoplay loop>
-			<source src="/music/acnh.mp3" type="audio/ogg">
-			<embed src="/music/acnh.mp3" autostart="true" loop="true" hidden="true"> 
+			<source src="../music/acnh.mp3" type="audio/ogg">
+			<embed src="../music/acnh.mp3" autostart="true" loop="true" hidden="true"> 
 		  </audio>
         <div class="container">
             <div class="clue-area">
@@ -49,7 +49,7 @@
                 <div class="picture-container"><img class="picture" id="clue-picture"></div>
                 <div class="text"><font id="clue-text"></font><br><font id="demo"></font></div>
 				<button class="next-btn" style="width: 20%" onclick="getLocation()">‏‏‎ ‎<i class="fas fa-location-arrow"></i>‏‏‎ ‎</button>
-				<button class="next-btn" style="width: 78%" id="nextPage" onclick="location.href='step-02.html';" disabled>Next Step</button>
+				<button class="next-btn" style="width: 78%" id="nextPage" onclick="getNextPage()" disabled>Next Step</button>
             </div>
         </div>
 	</body>
@@ -74,9 +74,9 @@
 	}
 
 	$("#clue-picture").click(function() {
-		if($("#clue-picture").attr("src") != "../images/clue.png"){
+		if($("#clue-picture").attr("src") != "../images/timsclue.jpg"){
 			$("#clue-picture").fadeTo(1000,0.30, function() {
-				$("#clue-picture").attr("src","../images/clue.png");
+				$("#clue-picture").attr("src","../images/timsclue.jpg");
 			}).fadeTo(500,1);
 			return false;
 		}

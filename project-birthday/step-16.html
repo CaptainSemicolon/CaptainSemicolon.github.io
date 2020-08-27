@@ -47,9 +47,19 @@
             <div class="clue-area">
                 <div class="title" id="clue-title">Hint 1: Some title</div>
                 <div class="picture-container"><img class="picture" id="clue-picture"></div>
-                <div class="text"><font id="clue-text"></font><br><font id="demo"></font></div>
-				<button class="next-btn" style="width: 100%" id="nextPage" onclick="getNextPage()">Next Step</button>
+				<div class="text"><font id="clue-text"></font><br><font id="demo"></font></div>
+				<input class="form-control clue-input" type="text" class="clue-input" onchange="verifyInput()" onkeyup="verifyInput()"></input>
+				<button class="next-btn" id="nextPage" style="width: 100%;" onclick="getNextPage()" disabled>Next Step</button>
             </div>
         </div>
 	</body>
+	<script>
+	function verifyInput(){
+		var input = $(".clue-input").val();
+		if(input == 'secret')
+			$("#nextPage").removeAttr("disabled");
+		else
+			$("#nextPage").attr("disabled", "disabled");
+	}
+	</script>
 </html>
