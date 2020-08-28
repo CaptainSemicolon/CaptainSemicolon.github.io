@@ -47,7 +47,7 @@ async function typewriter(message){
     for(var i = 0; i != message.length + 1; i++){
         if(message.charAt(i) != '<' && message.charAt(i+1) != 'b' && message.charAt(i+2) != 'r' && message.charAt(i+3) != '>'){
             $('#clue-text').html(message.substring(0, i));
-            await sleep(50);
+            await sleep(0);
         }
         else
             i = i+1;
