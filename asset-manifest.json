@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/static/js/main.10d4a8d5.js",
+    "static/media/Slide13.png": "/static/media/Slide13.c40e701a45ad5387f6b4.png",
+    "static/media/Slide14.png": "/static/media/Slide14.2b39fc718a644d41ba23.png",
+    "static/media/Slide11.png": "/static/media/Slide11.2da76ae932bf542cb87f.png",
+    "static/media/Slide6.png": "/static/media/Slide6.ca2e264a608d746907bc.png",
+    "static/media/Slide10.png": "/static/media/Slide10.9fa3581f152566c7496b.png",
+    "static/media/Slide3.png": "/static/media/Slide3.042215472c427dcdc418.png",
+    "static/media/Slide12.png": "/static/media/Slide12.7fbc74012c224863ea68.png",
+    "static/media/Slide16.png": "/static/media/Slide16.59e7f8c025bc8dde1215.png",
+    "static/media/Slide15.png": "/static/media/Slide15.3afa94722eb76eacd813.png",
+    "static/media/Slide7.png": "/static/media/Slide7.49d82ab696e8024e74e9.png",
+    "static/media/Slide5.png": "/static/media/Slide5.50e138819b4273fc3c23.png",
+    "static/media/Slide4.png": "/static/media/Slide4.c7d154befe9ec8388b01.png",
+    "static/media/Slide9.png": "/static/media/Slide9.35e47a21bbecd3ffa044.png",
+    "static/media/Slide17.png": "/static/media/Slide17.f7b949425cab6ac61168.png",
+    "static/media/Slide8.png": "/static/media/Slide8.f03f4cc30e06df24380b.png",
+    "static/media/excelproMozaique.png": "/static/media/excelproMozaique.48baa142a8600d7e5159.png",
+    "static/media/excelpro-clean.png": "/static/media/excelpro-clean.4208cda1614a7ac8146a.png",
+    "index.html": "/index.html",
+    "main.10d4a8d5.js.map": "/static/js/main.10d4a8d5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.10d4a8d5.js"
+  ]
+}
